@@ -12,7 +12,7 @@ class model
 {
 private:
 	//Create a smart pointer that is for the eigenFaceRecognizer
-	Ptr<EigenFaceRecognizer> mModel;
+	Ptr<cv::face::EigenFaceRecognizer> mModel;
 public:
 	model();
 	virtual ~model();
