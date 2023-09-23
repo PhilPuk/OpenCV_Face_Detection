@@ -8,15 +8,19 @@
 #include<vector>
 #include<iostream>
 
-class model
+class Model
 {
 private:
-	//Create a smart pointer that is for the eigenFaceRecognizer
 	Ptr<cv::face::EigenFaceRecognizer> mModel;
 public:
-	model();
-	virtual ~model();
+	Model();
+	virtual ~Model();
 	
 
+	Ptr<cv::face::EigenFaceRecognizer>& getModel();
+
+	void trainModel(std::vector<cv::Mat>& images, std::vector<int>& labels);
+
+	int predict(cv::Mat& image);
 };
 

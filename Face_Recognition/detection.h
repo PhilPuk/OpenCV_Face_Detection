@@ -9,15 +9,15 @@
 using namespace std;
 using namespace cv;
 
-class detection
+class Detection
 {
 private:
 	Scalar mFrameColor;
 public:
-	detection();
-	detection(Scalar frameColor);
+	Detection();
+	Detection(Scalar frameColor);
 
-	~detection();
+	~Detection();
 
 	cv::Mat& detectOnImages(cv::Mat& image, cv::CascadeClassifier& cascadeClassifier, double scale);
 

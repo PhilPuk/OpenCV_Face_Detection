@@ -6,6 +6,7 @@
 #include"camera.h"
 #include"dataset.h"
 #include"detection.h"
+#include"recognition.h"
 #include"util.h"
 
 
@@ -17,8 +18,8 @@ int main(int argc, const char** argv)
 	cascadeClassifier.load(util.pathes.haarcascade_frontalface_default_xml);
 	nestedCascade.load(util.pathes.haarcascade_eye_tree_eyeglasses_xml);
 
-	detection detect;
-	detect.run(util.cascadeClassifier);
-	Camera camera;
-	//camera.run();
+	Recognition recognition;
+	recognition.run();
+
+
 }

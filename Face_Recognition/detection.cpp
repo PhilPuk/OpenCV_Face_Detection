@@ -1,25 +1,25 @@
 #include "detection.h"
 
-detection::detection()
+Detection::Detection()
 {
     this->mFrameColor = Scalar(0, 255, 0);
 }
 
 
-detection::detection(Scalar Color)
+Detection::Detection(Scalar Color)
 {
     this->mFrameColor = Color;
 }
 
-detection::~detection()
+Detection::~Detection()
 {
 }
 
-cv::Mat& detection::detectOnImages(cv::Mat& image, cv::CascadeClassifier& cascadeClassifier ,double scale)
+cv::Mat& Detection::detectOnImages(cv::Mat& image, cv::CascadeClassifier& cascadeClassifier ,double scale)
 {
     /*
     * 1. Convert the current frame to grayscale.
-    * 2. Resize the current frame to 1/4 to speed up the detection process.
+    * 2. Resize the current frame to 1/4 to speed up the Detection process.
     * 3. Equalize the histogram of the resized frame.
     * 4. Detect faces of different sizes using cascade classifier.
     * 5. Draw rectangles around the faces.
@@ -44,7 +44,7 @@ cv::Mat& detection::detectOnImages(cv::Mat& image, cv::CascadeClassifier& cascad
     return image;
 }
 
-void detection::run(cv::CascadeClassifier& cascadeClassifier)
+void Detection::run(cv::CascadeClassifier& cascadeClassifier)
 {
     /*
     * 1. Get the current frame from the camera.
