@@ -6,20 +6,12 @@
 #include"camera.h"
 #include"dataset.h"
 #include"detection.h"
-#include"recognition.h"
 #include"util.h"
 
 
 int main(int argc, const char** argv)
 {
-	Utility util;
-	Dataset dataset(util.pathes.pre_processed_csv, util.pathes.names_txt);
-	cv::CascadeClassifier cascadeClassifier, nestedCascade;
-	cascadeClassifier.load(util.pathes.haarcascade_frontalface_default_xml);
-	nestedCascade.load(util.pathes.haarcascade_eye_tree_eyeglasses_xml);
-
-	Recognition recognition;
-	recognition.run();
-
-
+	cv::CascadeClassifier cascadeClassifier;
+	cascadeClassifier.load(Utility().pathes.haarcascade_frontalface_default_xml);
+	Detection().run(cascadeClassifier);
 }

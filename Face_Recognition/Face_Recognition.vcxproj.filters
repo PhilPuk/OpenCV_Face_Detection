@@ -33,12 +33,6 @@
     <ClInclude Include="detection.h">
       <Filter>Headerdateien\OpenCV</Filter>
     </ClInclude>
-    <ClInclude Include="recognition.h">
-      <Filter>Headerdateien\OpenCV</Filter>
-    </ClInclude>
-    <ClInclude Include="model.h">
-      <Filter>Headerdateien\OpenCV</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,12 +48,6 @@
       <Filter>Quelldateien\OpenCV</Filter>
     </ClCompile>
     <ClCompile Include="detection.cpp">
-      <Filter>Quelldateien\OpenCV</Filter>
-    </ClCompile>
-    <ClCompile Include="recognition.cpp">
-      <Filter>Quelldateien\OpenCV</Filter>
-    </ClCompile>
-    <ClCompile Include="model.cpp">
       <Filter>Quelldateien\OpenCV</Filter>
     </ClCompile>
   </ItemGroup>
