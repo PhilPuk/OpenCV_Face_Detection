@@ -6,10 +6,11 @@
 
 struct Pathes
 {
+	const std::string haarcascade_frontalface_default_xml = "haarcascade_frontalface_default.xml";
+	//Old pathes
 	const std::string names_txt = "../names.txt";
 	const std::string pre_processed_csv = "../pre_processed_csv.csv";
 	const std::string haarcascade_frontalface_alt_xml = "../Face_Recognition/haarcascades/haarcascade_frontalface_alt.xml";
-	const std::string haarcascade_frontalface_default_xml = "haarcascade_frontalface_default.xml";
 	const std::string haarcascade_eye_tree_eyeglasses_xml = "../haarcascade_eye_tree_eyeglasses.xml";
 };
 
