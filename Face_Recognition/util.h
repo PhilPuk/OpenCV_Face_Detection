@@ -6,11 +6,11 @@
 
 struct Pathes
 {
-	const std::string names_txt = "../Face_Recognition/my_dataset/names.txt";
-	const std::string pre_processed_csv = "../Face_Recognition/my_dataset/pre_processed_csv.csv";
+	const std::string names_txt = "../names.txt";
+	const std::string pre_processed_csv = "../pre_processed_csv.csv";
 	const std::string haarcascade_frontalface_alt_xml = "../Face_Recognition/haarcascades/haarcascade_frontalface_alt.xml";
-	const std::string haarcascade_frontalface_default_xml = "../Face_Recognition/haarcascades/haarcascade_frontalface_default.xml";
-	const std::string haarcascade_eye_tree_eyeglasses_xml = "../Face_Recognition/haarcascades/haarcascade_eye_tree_eyeglasses.xml";
+	const std::string haarcascade_frontalface_default_xml = "haarcascade_frontalface_default.xml";
+	const std::string haarcascade_eye_tree_eyeglasses_xml = "../haarcascade_eye_tree_eyeglasses.xml";
 };
 
 class Utility
